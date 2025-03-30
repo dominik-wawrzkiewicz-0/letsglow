@@ -167,12 +167,12 @@ const Reviews = () => {
       <div className="text-center py-8">
         <h2 className="text-2xl font-serif mb-4">Byłaś u nas? Podziel się swoją opinią!</h2>
         <p className="text-gray-600 mb-8">Twoja opinia pomoże innym w podjęciu decyzji</p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+        <div className="flex flex-col sm:flex-row sm:gap-1 gap-4 justify-center items-center">
           <a
             href="https://booksy.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-navy-600 text-white px-8 py-3 rounded-md hover:bg-navy-700 transition-colors"
+            className="inline-block bg-navy-600 text-white px-6 py-2 rounded-md text-sm sm:text-base hover:bg-navy-700 transition-colors text-center w-full sm:w-auto sm:max-w-none max-w-[70%] sm:mx-0 mx-auto"
           >
             Dodaj opinię na Booksy
           </a>
@@ -180,7 +180,7 @@ const Reviews = () => {
             href="https://google.com/maps"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block border-2 border-navy-600 text-navy-600 px-8 py-3 rounded-md hover:bg-navy-50 transition-colors"
+            className="inline-block border-2 border-navy-600 text-navy-600 px-6 py-2 rounded-md text-sm sm:text-base hover:bg-navy-50 transition-colors text-center w-full sm:w-auto sm:max-w-none max-w-[70%] sm:mx-0 mx-auto"
           >
             Dodaj opinię w Google
           </a>
