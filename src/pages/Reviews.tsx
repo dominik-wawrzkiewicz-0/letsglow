@@ -169,7 +169,7 @@ const Reviews = () => {
         <p className="text-gray-600 mb-8">Twoja opinia pomoże innym w podjęciu decyzji</p>
         <div className="flex flex-col sm:flex-row sm:gap-1 gap-4 justify-center items-center">
           <a
-            href="https://booksy.com"
+            href="https://booksy.com/pl-pl/189282_let-s-glow-beauty-salon_salon-kosmetyczny_5694_gizycko#ba_s=seo"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-navy-600 text-white px-6 py-2 rounded-md text-sm sm:text-base hover:bg-navy-700 transition-colors text-center w-full sm:w-auto sm:max-w-none max-w-[70%] sm:mx-0 mx-auto"
@@ -177,7 +177,7 @@ const Reviews = () => {
             Dodaj opinię na Booksy
           </a>
           <a
-            href="https://google.com/maps"
+            href="https://g.page/r/CdlLzLHj-CQbEBM/review"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block border-2 border-navy-600 text-navy-600 px-6 py-2 rounded-md text-sm sm:text-base hover:bg-navy-50 transition-colors text-center w-full sm:w-auto sm:max-w-none max-w-[70%] sm:mx-0 mx-auto"
@@ -186,19 +186,19 @@ const Reviews = () => {
           </a>
         </div>
       </div>
-
+{/* 
       <div className="mt-8 text-center pb-8">
         <h2 className="text-2xl font-serif mb-4">Przekonaj się sama!</h2>
         <p className="text-gray-600 mb-8">Umów się na wizytę i dołącz do grona zadowolonych klientek</p>
         <a
-          href="https://booksy.com"
+          href="https://booksy.com/pl-pl/189282_let-s-glow-beauty-salon_salon-kosmetyczny_5694_gizycko#ba_s=seo"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block bg-navy-600 text-white px-8 py-3 rounded-md hover:bg-navy-700 transition-colors"
         >
           Zarezerwuj wizytę
         </a>
-      </div>
+      </div> */}
     </div>
   );
 };

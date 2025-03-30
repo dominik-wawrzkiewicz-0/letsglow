@@ -14,21 +14,28 @@ const Footer = () => {
               <li className="flex items-center gap-2 text-gray-600">
                 <Phone className="h-4 w-4" />
                 <a href="tel:+48123456789" className="hover:text-navy-600">
-                  +48 123 456 789
+                  +48 662 080 875
                 </a>
               </li>
               <li className="flex items-center gap-2 text-gray-600">
                 <Mail className="h-4 w-4" />
-                <a href="mailto:kontakt@letsglowbeautysalon.pl" className="hover:text-navy-600">
-                  kontakt@letsglowbeautysalon.pl
+                <a href="mailto:info.letsglowbeautysalon@gmail.com" className="hover:text-navy-600">
+                info.letsglowbeautysalon@gmail.com
                 </a>
               </li>
               <li className="flex items-start gap-2 text-gray-600">
                 <MapPin className="h-4 w-4 mt-1" />
-                <address className="not-italic">
-                  ul. Warszawska 123<br />
-                  11-500 Giżycko
-                </address>
+                <a
+                  href="https://maps.app.goo.gl/RZnnoRQGx4wJs9YT9"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-navy-600"
+                >
+                  <address className="not-italic">
+                    Mickiewicza 47,<br />
+                    11-500 Giżycko
+                  </address>
+                </a>
               </li>
             </ul>
           </div>
@@ -81,7 +88,7 @@ const Footer = () => {
             <h3 className="text-lg font-serif text-navy-600 mb-4">Social Media</h3>
             <div className="flex space-x-4">
               <a
-                href="https://facebook.com"
+                href="https://www.facebook.com/profile.php?id=100090762961737"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-600 hover:text-navy-600"
@@ -89,7 +96,7 @@ const Footer = () => {
                 <Facebook className="h-6 w-6" />
               </a>
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/letsglow_beautysalon/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-600 hover:text-navy-600"

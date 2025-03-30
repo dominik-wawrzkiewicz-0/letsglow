@@ -45,8 +45,8 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="font-medium mb-1">Telefon</h3>
-                  <a href="tel:+48123456789" className="text-gray-600 hover:text-navy-600">
-                    +48 123 456 789
+                  <a href="tel:+48662080875" className="text-gray-600 hover:text-navy-600">
+                    +48 662 080 875
                   </a>
                 </div>
               </div>
@@ -57,8 +57,8 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="font-medium mb-1">Email</h3>
-                  <a href="mailto:kontakt@letsglowbeautysalon.pl" className="text-gray-600 hover:text-navy-600">
-                    kontakt@letsglowbeautysalon.pl
+                  <a href="mailto:info.letsglowbeautysalon@gmail.com" className="text-gray-600 hover:text-navy-600">
+                    info.letsglowbeautysalon@gmail.com
                   </a>
                 </div>
               </div>
@@ -70,7 +70,7 @@ const Contact = () => {
                 <div>
                   <h3 className="font-medium mb-1">Adres</h3>
                   <address className="text-gray-600 not-italic">
-                    ul. Warszawska 123<br />
+                    ul. Mickiewicza 47,<br />
                     11-500 Giżycko
                   </address>
                 </div>
@@ -83,11 +83,56 @@ const Contact = () => {
                 <div>
                   <h3 className="font-medium mb-1">Godziny otwarcia</h3>
                   <div className="text-gray-600">
-                    <p>Poniedziałek - Piątek: 9:00 - 19:00</p>
-                    <p>Sobota: 9:00 - 16:00</p>
-                    <p>Niedziela: Zamknięte</p>
+                    <p>Poniedziałek – Piątek: 9:00 - 18:00</p>
+                    <p>Sobota: 9:00 - 14:00</p>
                   </div>
                 </div>
+              </div>
+              
+              <div>
+                <h3 className="font-medium mb-1">Znajdź nas online</h3>
+                <ul className="text-navy-600 space-y-1">
+                  <li>
+                    <a 
+                      href="https://www.instagram.com/letsglow_beautysalon/" 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="hover:underline"
+                    >
+                      Instagram
+                    </a>
+                  </li>
+                  <li>
+                    <a 
+                      href="https://www.facebook.com/p/Lets-Glow-Beauty-Salon-100090762961737/" 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="hover:underline"
+                    >
+                      Facebook
+                    </a>
+                  </li>
+                  <li>
+                    <a 
+                      href="https://booksy.com/pl-pl/189282_let-s-glow-beauty-salon_salon-kosmetyczny_5694_gizycko#ba_s=seo" 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="hover:underline"
+                    >
+                      Booksy
+                    </a>
+                  </li>
+                  <li>
+                    <a 
+                      href="https://maps.app.goo.gl/RZnnoRQGx4wJs9YT9" 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="hover:underline"
+                    >
+                      Google Maps
+                    </a>
+                  </li>
+                </ul>
               </div>
             </div>
           </motion.div>
@@ -100,7 +145,7 @@ const Contact = () => {
             className="h-[400px] bg-gray-100 rounded-lg overflow-hidden"
           >
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2346.925064716961!2d21.766666315815498!3d54.03749998013255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e17e8d0000000f%3A0x0!2zNTTCsDAyJzE1LjAiTiAyMcKwNDYnMDAuMCJF!5e0!3m2!1sen!2spl!4v1615000000000!5m2!1sen!2spl"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5387.804335896696!2d21.77073027826152!3d54.03730447249766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e187036a6d6349%3A0x1b24f8e3b1cc4bd9!2sLet&#39;s%20Glow%20Beauty%20Salon%20Fryzjer%20Kosmetyczka%20Kosmetolog%20Kobido!5e1!3m2!1sen!2spl!4v1743353750263!5m2!1sen!2spl"
               width="100%"
               height="100%"
               style={{ border: 0 }}
@@ -129,7 +174,7 @@ const Contact = () => {
               Zarezerwuj online
             </a>
             <a 
-              href="tel:+48123456789"
+              href="tel:+48662080875"
               className="inline-block border-2 border-navy-600 text-navy-600 px-8 py-3 rounded-md hover:bg-navy-50 transition-colors"
             >
               Zadzwoń do nas

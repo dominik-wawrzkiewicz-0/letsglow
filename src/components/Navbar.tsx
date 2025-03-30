@@ -10,9 +10,12 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
-            <Link to="/" className="flex items-center space-x-2">
-              <Scissors className="h-8 w-8 text-navy-600" />
-              <span className="text-xl font-serif text-navy-600">Let's Glow Beauty Salon</span>
+            <Link to="/" className="flex items-center">
+              <img 
+                src="/LET’S GLOW Beauty Salon.png" 
+                alt="Let's Glow Beauty Salon Logo" 
+                className="h-64 object-contain" 
+              />
             </Link>
           </div>
 
@@ -24,7 +27,7 @@ const Navbar = () => {
             <Link to="/about" className="text-gray-600 hover:text-navy-600">O nas</Link>
             <Link to="/contact" className="text-gray-600 hover:text-navy-600">Kontakt</Link>
             <a 
-              href="https://booksy.com" 
+              href="https://booksy.com/pl-pl/189282_let-s-glow-beauty-salon_salon-kosmetyczny_5694_gizycko#ba_s=seo" 
               target="_blank" 
               rel="noopener noreferrer"
               className="bg-navy-600 text-white px-4 py-2 rounded-md hover:bg-navy-700 transition-colors"
@@ -85,7 +88,7 @@ const Navbar = () => {
               Kontakt
             </Link>
             <a 
-              href="https://booksy.com" 
+              href="https://booksy.com/pl-pl/189282_let-s-glow-beauty-salon_salon-kosmetyczny_5694_gizycko#ba_s=seo" 
               target="_blank" 
               rel="noopener noreferrer"
               className="block px-3 py-2 bg-navy-600 text-white text-center rounded-md hover:bg-navy-700 transition-colors"

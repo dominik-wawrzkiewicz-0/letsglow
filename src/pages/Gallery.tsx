@@ -97,7 +97,7 @@ const Gallery = () => {
             Umów się na wizytę i pozwól nam stworzyć Twoją wymarzoną metamorfozę
           </p>
           <a 
-            href="https://booksy.com" 
+            href="https://booksy.com/pl-pl/189282_let-s-glow-beauty-salon_salon-kosmetyczny_5694_gizycko#ba_s=seo" 
             target="_blank" 
             rel="noopener noreferrer"
             className="inline-block bg-navy-600 text-white px-8 py-3 rounded-md hover:bg-navy-700 transition-colors"
