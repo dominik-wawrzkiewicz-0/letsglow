@@ -12,7 +12,7 @@ const Navbar = () => {
           <div className="flex items-center">
             <Link to="/" className="flex items-center space-x-2">
               <Scissors className="h-8 w-8 text-navy-600" />
-              <span className="text-xl font-serif text-navy-600">Bella Beauty</span>
+              <span className="text-xl font-serif text-navy-600">Let's Glow Beauty Salon</span>
             </Link>
           </div>
 

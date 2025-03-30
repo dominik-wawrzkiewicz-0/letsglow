@@ -1,13 +1,8 @@
-import React, { useState } from 'react';
-
-// Inline SVG for quote icon (no external modules)
-function QuoteIcon(props: React.SVGProps<SVGSVGElement>) {
-  return (
-    <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
-      <path d="M7.17 8.33A3.33 3.33 0 0 1 10.5 5H12v2.5h-1.5a.83.83 0 0 0-.83.83v.84a.83.83 0 0 0 .83.83H12v4.17a3.33 3.33 0 0 1-3.33 3.33H6.83A.83.83 0 0 1 6 17.17v-3.34a.83.83 0 0 1 .83-.83H8V11.5H6.83A.83.83 0 0 1 6 10.67v-2.34c0-.46.37-.83.83-.83h.34Zm10 0A3.33 3.33 0 0 1 20.5 5H22v2.5h-1.5a.83.83 0 0 0-.83.83v.84c0 .46.37.83.83.83H22v4.17a3.33 3.33 0 0 1-3.33 3.33h-1.84a.83.83 0 0 1-.83-.83v-3.34c0-.46.37-.83.83-.83H18V11.5h-1.17a.83.83 0 0 1-.83-.83v-2.34c0-.46.37-.83.83-.83h.34Z" />
-    </svg>
-  );
-}
+import React from 'react';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import { Star } from 'lucide-react';
 
 interface Review {
   name: string;
@@ -15,122 +10,160 @@ interface Review {
 }
 
 const Reviews = () => {
-  // Example data
-  const beautyReviews: Review[] = [
-    { name: 'Aneta', comment: 'Cudowny relaks na kobido...' },
-    { name: 'Paulina', comment: 'Bardzo polecam!...' },
-    { name: 'Wiola', comment: 'Polecam Panią Weronikę...' },
-    { name: 'Emilia', comment: 'Polecam salon z całego serca...' },
-    { name: 'Magdalena', comment: 'Wyszłam z salonu bardzo zadowolona...' },
-    { name: 'Karolina', comment: 'Masaż Kobido wykonany rewelacyjnie...' },
-    { name: 'Joanna', comment: 'Polecam !!! Masaż kobido...' },
-    { name: 'Anna', comment: 'Kobido wspaniały zabieg...' },
-    { name: 'Agnieszka', comment: 'Zabieg na twarz - rewelacja...' },
-    { name: 'Katarzyna', comment: 'Polecam !!! Masaż kobido...' },
-    { name: 'Joanna', comment: 'Polecam całym sercem...' },
+  const hairdresserReviews: Review[] = [
+    {
+      name: "Arleta",
+      comment: "Polecam z całego serca! Odwiedziłam bardzo dużo salonów gdzie nie byłam zadowolona..."
+    },
+    {
+      name: "Kamila",
+      comment: "Pani Ewa i chyba nic więcej nie trzeba pisać. Przemiła kobieta, wystarczyło jedno zdanie..."
+    },
+    {
+      name: "Emilia",
+      comment: "Ten salon to ZŁOTO! Panie tryskające pozytywną energią..."
+    },
+    {
+      name: "Joanna",
+      comment: "Dziś miałam przyjemność być w salonie pierwszy raz i wiem, że nie ostatni..."
+    },
+    {
+      name: "Martyna",
+      comment: "Polecajka 100%! Przesympatyczne Panie fryzjerki, serdeczne i dbające o każdy szczegół..."
+    },
+    {
+      name: "Olga",
+      comment: "Przemiła wizyta... relaks... delikatność w podejściu do włosów! Świetnie dobrany kolor..."
+    },
+    {
+      name: "Marika",
+      comment: "Polecam bardzo, przemiłe Panie fryzjerki i bardzo wesoła atmosfera..."
+    },
+    {
+      name: "Patrycja",
+      comment: "Polecam bardzo serdecznie! Pani fryzjerska bardzo profesjonalna, expert od koloryzacji..."
+    },
+    {
+      name: "Magdalena",
+      comment: "Skorzystałam z usługi farbowania oraz regeneracji i jestem bardzo zadowolona..."
+    },
+    {
+      name: "Anna",
+      comment: "Pani fryzjerka wykonała pracę wzorowo. Moje dekoloryzacje wykonała profesjonalnie..."
+    },
+    {
+      name: "Milena",
+      comment: "Pani Ewa robi mistrzostwo z włosami. Dziękuję i na pewno nie raz do Was wrócę ♥️"
+    }
   ];
 
-  const hairdresserReviews: Review[] = [
-    { name: 'Arleta', comment: 'Polecam z całego serca!...' },
-    { name: 'Kamila', comment: 'Pani Ewa – przemiła kobieta...' },
-    { name: 'Emilia', comment: 'Ten salon to ZŁOTO!...' },
-    { name: 'Joanna', comment: 'Pierwszy raz i wiem, że nie ostatni...' },
-    { name: 'Martyna', comment: 'Polecajka 100%! Fryzjerki...' },
-    { name: 'Olga', comment: 'Relaks, delikatność, świetnie...' },
-    { name: 'Marika', comment: 'Bardzo polecam. Miła atmosfera...' },
-    { name: 'Patrycja', comment: 'Pani fryzjerska ekspert...' },
-    { name: 'Magdalena', comment: 'Farbowanie i regeneracja...' },
-    { name: 'Anna', comment: 'Dekoloryzacja wykonana...' },
-    { name: 'Milena', comment: 'Pani Ewa robi mistrzostwo...' },
+  const beautyReviews: Review[] = [
+    {
+      name: "Aneta",
+      comment: "Cudowny relaks na kobido, Pani Weronika jest Aniołem, a jej dłonie leczą..."
+    },
+    {
+      name: "Paulina",
+      comment: "Bardzo polecam! Profesjonalizm i bardzo miła atmosfera..."
+    },
+    {
+      name: "Wiola",
+      comment: "Polecam Panią Weronikę kobieta o ciepłym sercu oraz ogromnej wiedzy kosmetologicznej."
+    },
+    {
+      name: "Emilia",
+      comment: "Polecam salon z całego serca, masaż Kobido oraz kosmetyki starannie dopasowane..."
+    },
+    {
+      name: "Magdalena",
+      comment: "Magdalena Wyszłam z salonu bardzo zadowolona, masaż kobido wykonamy najlepiej..."
+    },
+    {
+      name: "Karolina",
+      comment: "Masaż Kobido wykonany rewelacyjnie, z dużą dbałością o komfort i że spora dawka edukacji..."
+    },
+    {
+      name: "Joanna",
+      comment: "Polecam !!! Masaż kobido przeprowadzony profesjonalnie, a Pani przesympatyczna..."
+    },
+    {
+      name: "Anna",
+      comment: "Kobido wspaniały zabieg, relaksujący, odmładzający. Zawsze z przyjemnością wracam..."
+    },
+    {
+      name: "Agnieszka",
+      comment: "Usługa: zabieg na twarz Rewelacja, efekty widoczne od razu, po zabiegu..."
+    },
+    {
+      name: "Katarzyna",
+      comment: "Polecam !!! Masaż kobido przeprowadzony profesjonalnie, a Pani przesympatyczna..."
+    },
+    {
+      name: "Joanna",
+      comment: "Polecam całym sercem. Coś dla ciała, ducha i zmysłów. Miejsce nastrojowe i klimatyczne..."
+    }
   ];
 
   const allReviews = [...beautyReviews, ...hairdresserReviews];
 
-  // Number of reviews to show at once
-  const slidesToShow = 20;
-
-  // React state to track the current slide (start at 0)
-  const [currentSlide, setCurrentSlide] = useState(0);
-
-  // Move to the next slide
-  const nextSlide = () => {
-    if (currentSlide < allReviews.length - slidesToShow) {
-      setCurrentSlide(currentSlide + 1);
-    } else {
-      setCurrentSlide(0);
-    }
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: true,
+    draggable: true,
+    swipe: true,
+    swipeToSlide: true,
+    touchMove: true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 640,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: true,
+        },
+      },
+    ],
   };
-
-  // Move to the previous slide
-  const prevSlide = () => {
-    if (currentSlide > 0) {
-      setCurrentSlide(currentSlide - 1);
-    } else {
-      setCurrentSlide(allReviews.length - slidesToShow);
-    }
-  };
-
-  // Generate an array for dot navigation
-  const totalSlides = allReviews.length - slidesToShow + 1;
-  const dots = Array.from({ length: totalSlides }, (_, i) => i);
 
   return (
     <div className="bg-white">
-      {/* Title Section */}
-      <div className="relative h-[40vh] min-h-[400px]" style={{ background: '#ddd' }}>
-        <div className="relative h-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-center">
-          <div className="text-black text-center">
-            <h1 className="text-4xl md:text-5xl font-serif mb-4">Opinie</h1>
-            <p className="text-lg max-w-xl">Zobacz, co mówią o nas nasze klientki</p>
-          </div>
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl font-serif mb-4">Opinie</h2>
+          <p className="text-gray-600 mb-8">Zobacz, co mówią o nas nasze klientki</p>
         </div>
-      </div>
 
-      {/* Reviews Slider without external modules */}
-      <div className="py-8 px-4 max-w-7xl mx-auto">
-        <div className="flex items-center justify-between mb-4">
-          <button onClick={prevSlide} className="px-4 py-2 bg-gray-300 rounded">Poprzedni</button>
-          <button onClick={nextSlide} className="px-4 py-2 bg-gray-300 rounded">Następny</button>
-        </div>
-        <div className="overflow-hidden">
-          <div
-            className="flex transition-transform duration-300"
-            style={{ transform: `translateX(-${currentSlide * (100 / slidesToShow)}%)` }}
-          >
+        <div className="py-8 px-4 max-w-7xl mx-auto">
+          <Slider {...settings}>
             {allReviews.map((review, index) => (
-              <div
-                key={index}
-                className="min-w-[calc(100%/3)] p-4 flex flex-col items-center"
-                style={{ width: `${100 / slidesToShow}%` }}
-              >
-                <div className="bg-gray-50 p-6 rounded-lg text-center shadow-md h-full flex flex-col justify-center">
-                  <div className="mb-4 text-navy-300">
-                    <QuoteIcon className="mx-auto h-8 w-8" />
+              <div key={index} className="p-4">
+                <div className="bg-gray-50 p-6 rounded-lg text-center shadow-md flex flex-col justify-center h-full">
+                  <div className="mb-4 flex text-yellow-400 justify-center">
+                    {[...Array(5)].map((_, idx) => (
+                      <Star key={idx} className="h-5 w-5 fill-current" />
+                    ))}
                   </div>
                   <p className="text-gray-600 italic mb-4">"{review.comment}"</p>
                   <p className="font-semibold text-navy-700">{review.name}</p>
                 </div>
               </div>
             ))}
-          </div>
+          </Slider>
         </div>
-        {/* Dot Navigation */}
-        <div className="flex justify-center mt-4 space-x-2">
-          {dots.map((dotIndex) => (
-            <button
-              key={dotIndex}
-              onClick={() => setCurrentSlide(dotIndex)}
-              className={
-                dotIndex === currentSlide
-                  ? 'w-3 h-3 bg-gray-800 rounded-full'
-                  : 'w-3 h-3 bg-gray-300 rounded-full'
-              }
-            />
-          ))}
-        </div>
-      </div>
+      </section>
 
-      {/* CTA */}
       <div className="text-center py-8">
         <h2 className="text-2xl font-serif mb-4">Byłaś u nas? Podziel się swoją opinią!</h2>
         <p className="text-gray-600 mb-8">Twoja opinia pomoże innym w podjęciu decyzji</p>
@@ -154,7 +187,6 @@ const Reviews = () => {
         </div>
       </div>
 
-      {/* Book Appointment */}
       <div className="mt-8 text-center pb-8">
         <h2 className="text-2xl font-serif mb-4">Przekonaj się sama!</h2>
         <p className="text-gray-600 mb-8">Umów się na wizytę i dołącz do grona zadowolonych klientek</p>

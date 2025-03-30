@@ -19,8 +19,8 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-2 text-gray-600">
                 <Mail className="h-4 w-4" />
-                <a href="mailto:kontakt@bella-beauty.pl" className="hover:text-navy-600">
-                  kontakt@bella-beauty.pl
+                <a href="mailto:kontakt@letsglowbeautysalon.pl" className="hover:text-navy-600">
+                  kontakt@letsglowbeautysalon.pl
                 </a>
               </li>
               <li className="flex items-start gap-2 text-gray-600">
@@ -101,7 +101,7 @@ const Footer = () => {
         </div>
 
         <div className="mt-8 pt-8 border-t text-center text-gray-500 text-sm">
-          <p>&copy; {new Date().getFullYear()} Bella Beauty. Wszelkie prawa zastrzeżone.</p>
+          <p>&copy; {new Date().getFullYear()} Let's Glow Beauty Salon. Wszelkie prawa zastrzeżone.</p>
         </div>
       </div>
     </footer>

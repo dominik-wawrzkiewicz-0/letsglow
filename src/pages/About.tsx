@@ -21,7 +21,7 @@ const About = () => {
               O Nas
             </h1>
             <p className="text-lg max-w-xl">
-              Poznaj nasz zespół i historię salonu Bella Beauty w Giżycku
+              Poznaj nasz zespół i historię salonu Let's Glow Beauty Salon w Giżycku
             </p>
           </div>
         </div>
@@ -37,7 +37,7 @@ const About = () => {
         >
           <h2 className="text-3xl font-serif mb-6">Nasza Historia</h2>
           <p className="text-gray-600 mb-8">
-            Bella Beauty to miejsce stworzone z pasji do piękna i dbania o innych. 
+            Let's Glow Beauty Salon to miejsce stworzone z pasji do piękna i dbania o innych. 
             Od 2015 roku nieustannie rozwijamy się, aby zapewnić naszym klientkom 
             najwyższej jakości usługi fryzjerskie i kosmetyczne. Nasz salon 
             w sercu Giżycka to przestrzeń, gdzie każda klientka może poczuć się 

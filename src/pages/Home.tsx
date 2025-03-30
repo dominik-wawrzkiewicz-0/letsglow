@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Star, Calendar, Phone } from 'lucide-react';
+import Reviews from './Reviews';
 
 const Home = () => {
   return (
@@ -25,7 +26,7 @@ const Home = () => {
             className="text-white max-w-xl"
           >
             <h1 className="text-4xl md:text-5xl font-serif mb-4">
-              Odkryj swoje naturalne piękno w Bella Beauty
+              Odkryj swoje naturalne piękno w Let's Glow Beauty Salon
             </h1>
             <p className="text-lg mb-8">
               Profesjonalne usługi fryzjerskie i zabiegi na twarz w sercu Giżycka
@@ -113,35 +114,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Testimonials */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-serif text-center mb-12">Co mówią nasi klienci</h2>
-          
-          <div className="grid md:grid-cols-3 gap-8">
-            {[1, 2, 3].map((i) => (
-              <motion.div 
-                key={i}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                className="bg-white p-6 rounded-lg shadow-sm"
-              >
-                <div className="flex text-yellow-400 mb-4">
-                  {[...Array(5)].map((_, index) => (
-                    <Star key={index} className="h-5 w-5 fill-current" />
-                  ))}
-                </div>
-                <p className="text-gray-600 mb-4">
-                  "Wspaniała obsługa i profesjonalne podejście. Jestem bardzo zadowolona 
-                  z efektów zabiegów. Polecam każdemu!"
-                </p>
-                <p className="font-medium">Anna K.</p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <Reviews />
 
       {/* CTA Section */}
       <section className="py-16 bg-navy-600 text-white">
